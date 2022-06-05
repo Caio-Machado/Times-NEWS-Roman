@@ -17,14 +17,4 @@ class Carousel extends StatelessWidget {
       ],
     ));
   }
-
-  Widget _buildBullet() {
-    return Padding(
-        padding: EdgeInsets.all(15),
-        child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Container(width: 10, height: 10, decoration: BoxDecoration(borderRadius: BorderRadius.circular(30), color: Colors.black)),
-          Container(margin: EdgeInsets.only(bottom: 0, top: 0, left: 10, right: 10), width: 10, height: 10, decoration: BoxDecoration(borderRadius: BorderRadius.circular(30), color: Colors.black)),
-          Container(width: 10, height: 10, decoration: BoxDecoration(borderRadius: BorderRadius.circular(30), color: Colors.black))
-        ]));
-  }
 }

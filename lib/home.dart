@@ -5,6 +5,6 @@ import 'carousel.dart';
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(child: Carousel());
+    return Container(child: SingleChildScrollView(child: Carousel()));
   }
 }
