@@ -21,10 +21,10 @@ class CarouselTile extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   GestureDetector(
-                    child: Icon(Icons.tv, size: 27, color: Colors.white),
+                    child: Icon(Icons.arrow_left, size: 27, color: Colors.white),
                   ),
                   GestureDetector(
-                    child: Icon(Icons.tv, size: 27, color: Colors.white),
+                    child: Icon(Icons.arrow_right, size: 27, color: Colors.white),
                   )
                 ],
               )),
