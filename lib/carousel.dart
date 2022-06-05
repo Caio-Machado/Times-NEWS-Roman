@@ -13,8 +13,7 @@ class Carousel extends StatelessWidget {
                 itemCount: 3,
                 itemBuilder: (_, currentIndex) {
                   return CarouselTile();
-                })),
-        _buildBullet()
+                }))
       ],
     ));
   }
