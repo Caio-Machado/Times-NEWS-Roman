@@ -33,12 +33,13 @@ class CarouselTile extends StatelessWidget {
                 ],
               )),
           Container(
+              color: const Color(0xFF161314),
               child: Column(
-            children: [
-              Text('Titulo noticia'),
-              Text('Descrição noticia')
-            ],
-          ))
+                children: [
+                  Text('Titulo noticia', style: TextStyle(fontSize: 20, color: Colors.white)),
+                  Text('Descrição noticia', style: TextStyle(fontSize: 20, color: Colors.white))
+                ],
+              ))
         ]));
   }
 }
