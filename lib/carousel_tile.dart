@@ -32,7 +32,13 @@ class CarouselTile extends StatelessWidget {
                       ))
                 ],
               )),
-          Container(child: Column())
+          Container(
+              child: Column(
+            children: [
+              Text('Titulo noticia'),
+              Text('Descrição noticia')
+            ],
+          ))
         ]));
   }
 }
