@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'carousel_tile.dart';
 
 class Carousel extends StatelessWidget {
   @override
@@ -11,7 +12,7 @@ class Carousel extends StatelessWidget {
             child: PageView.builder(
                 itemCount: 3,
                 itemBuilder: (_, currentIndex) {
-                  return Container(color: currentIndex == 1 ? Colors.amber : Colors.red);
+                  return CarouselTile();
                 })),
         _buildBullet()
       ],
