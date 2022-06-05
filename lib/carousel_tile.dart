@@ -14,7 +14,19 @@ class CarouselTile extends StatelessWidget {
               color: const Color(0xFF161314),
               child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                 Text('Título Categoria', style: TextStyle(fontSize: 25, color: Colors.white))
-              ]))
+              ])),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              GestureDetector(
+                child: Icon(Icons.arrow_circle_left_outlined),
+              ),
+              GestureDetector(
+                child: Icon(Icons.arrow_circle_right_outlined),
+              )
+            ],
+          ),
+          Container(child: Column())
         ]));
   }
 }
