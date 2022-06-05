@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 class CarouselTile extends StatelessWidget {
   @override
@@ -20,12 +20,16 @@ class CarouselTile extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  GestureDetector(
-                    child: Icon(Icons.arrow_circle_up, size: 90, color: Colors.white),
-                  ),
-                  GestureDetector(
-                    child: Icon(Icons.arrow_circle_down, size: 90, color: Colors.white),
-                  )
+                  Transform.rotate(
+                      angle: 90 * pi / 180,
+                      child: GestureDetector(
+                        child: Icon(Icons.arrow_circle_up, size: 90, color: Colors.white),
+                      )),
+                  Transform.rotate(
+                      angle: 90 * pi / 180,
+                      child: GestureDetector(
+                        child: Icon(Icons.arrow_circle_down, size: 90, color: Colors.white),
+                      ))
                 ],
               )),
           Container(child: Column())
