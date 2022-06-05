@@ -15,7 +15,7 @@ class MainWidget extends StatelessWidget {
         home: Scaffold(
             drawer: Drawer(
               child: Menu(),
-              backgroundColor: const Color.fromRGBO(22, 19, 20, 1),
+              backgroundColor: const Color(0xFF161314),
             ),
             appBar: AppBar(title: const Center(child: Text('Times NEWS Roman', style: TextStyle(fontFamily: 'brushtip', fontSize: 20)))),
             body: Home()));
