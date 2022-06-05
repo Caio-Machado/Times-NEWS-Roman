@@ -21,12 +21,12 @@ class CarouselTile extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Transform.rotate(
-                      angle: 90 * pi / 180,
+                      angle: 270 * pi / 180,
                       child: GestureDetector(
                         child: Icon(Icons.arrow_circle_up, size: 90, color: Colors.white),
                       )),
                   Transform.rotate(
-                      angle: 90 * pi / 180,
+                      angle: 270 * pi / 180,
                       child: GestureDetector(
                         child: Icon(Icons.arrow_circle_down, size: 90, color: Colors.white),
                       ))
