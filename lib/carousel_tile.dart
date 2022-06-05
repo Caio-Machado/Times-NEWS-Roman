@@ -24,7 +24,7 @@ class CarouselTile extends StatelessWidget {
                     child: Icon(Icons.arrow_circle_up, size: 27, color: Colors.white),
                   ),
                   GestureDetector(
-                    child: Icon(Icons.arrow_circle_down, size: 27, color: Colors.white),
+                    child: Icon(Icons.arrow_circle_right, size: 27, color: Colors.white),
                   )
                 ],
               )),
