@@ -37,7 +37,7 @@ class CarouselTile extends StatelessWidget {
               child: Column(
                 children: [
                   Text('Titulo noticia', style: TextStyle(fontSize: 20, color: Colors.white)),
-                  Text('Welcome to the first edition of web3 weekly, a newsletter from a16z crypto that curates resources from us, and from others, for those seeking to understand and go deeper on all things crypto and web3. We aim to help cut through all the noise and share the sig…', style: TextStyle(fontSize: 20, color: Colors.white))
+                  Padding(padding: EdgeInsets.all(30), child: Text('Welcome to the first edition of web3 weekly, a newsletter from a16z crypto that curates resources from us, and from others, for those seeking to understand and go deeper on all things crypto and web3. We aim to help cut through all the noise and share the sig…', style: TextStyle(fontSize: 20, color: Colors.white)))
                 ],
               ))
         ]));
