@@ -16,7 +16,7 @@ class CarouselTile extends StatelessWidget {
                 Text('Título Categoria', style: TextStyle(fontSize: 25, color: Colors.white))
               ])),
           Container(
-              margin: EdgeInsets.only(top: 35, bottom: 35),
+              margin: EdgeInsets.only(top: 25, bottom: 25),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
