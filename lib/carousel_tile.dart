@@ -32,7 +32,7 @@ class CarouselTile extends StatelessWidget {
                       ))
                 ],
               )),
-          InfoBox(title: 'Titulo Teste que tem que ser long', description: 'Descrição teste que tem que ser longa pra dédeu, mas ainda assim tem que fazer sentido o sulficiente para não virar lorem ipsum dolor...')
+          InfoBox(title: 'Titulo Teste que tem que ser long', description: ' virar lorem ipsum dolor...')
         ])));
   }
 }
