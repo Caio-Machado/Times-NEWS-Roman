@@ -47,11 +47,13 @@ class InfoBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         color: const Color(0xFF161314),
-        child: Column(
-          children: [
-            Text(title, style: const TextStyle(fontSize: 35, color: Colors.white, decoration: TextDecoration.underline)),
-            Padding(padding: const EdgeInsets.all(15), child: Text(description, style: const TextStyle(fontSize: 20, color: Colors.white), textAlign: TextAlign.center))
-          ],
-        ));
+        child: Padding(
+            padding: const EdgeInsets.all(15),
+            child: Column(
+              children: [
+                Text(title, style: const TextStyle(fontSize: 35, color: Colors.white, decoration: TextDecoration.underline), textAlign: TextAlign.center),
+                Text(description, style: const TextStyle(fontSize: 20, color: Colors.white), textAlign: TextAlign.center)
+              ],
+            )));
   }
 }
