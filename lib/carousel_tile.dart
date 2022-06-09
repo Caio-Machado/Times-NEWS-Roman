@@ -10,7 +10,6 @@ class CarouselTile extends StatelessWidget {
         child: SingleChildScrollView(
             child: Column(children: [
           Container(
-              margin: EdgeInsets.only(top: 65),
               padding: EdgeInsets.only(top: 10, bottom: 10),
               color: const Color(0xFF161314),
               child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
