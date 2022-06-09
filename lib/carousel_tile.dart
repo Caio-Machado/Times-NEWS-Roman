@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
+import 'configs.dart';
 
 class CarouselTile extends StatelessWidget {
   @override
@@ -23,12 +24,12 @@ class CarouselTile extends StatelessWidget {
                   Transform.rotate(
                       angle: 270 * pi / 180,
                       child: GestureDetector(
-                        child: Icon(Icons.arrow_circle_up, size: 90, color: Colors.white),
+                        child: Icon(Icons.arrow_circle_up, size: 75, color: Colors.white),
                       )),
                   Transform.rotate(
                       angle: 270 * pi / 180,
                       child: GestureDetector(
-                        child: Icon(Icons.arrow_circle_down, size: 90, color: Colors.white),
+                        child: Icon(Icons.arrow_circle_down, size: 80, color: Colors.white),
                       ))
                 ],
               )),
@@ -41,19 +42,12 @@ class InfoBox extends StatelessWidget {
   var title = '';
   var description = '';
 
-  double adjustsWidth(double screenWidth, double margin) {
-    if (screenWidth >= 500) {
-      return 450;
-    }
-    return screenWidth - (margin * 2);
-  }
-
   InfoBox({Key? key, this.title = '', this.description = ''}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        width: adjustsWidth(MediaQuery.of(context).size.width, 25),
+        width: ResponsiveConfigs.adjustsWidth(MediaQuery.of(context).size.width, 25),
         margin: const EdgeInsets.all(25),
         color: const Color(0xFF161314),
         child: Padding(
