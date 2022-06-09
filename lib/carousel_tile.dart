@@ -32,20 +32,25 @@ class CarouselTile extends StatelessWidget {
                       ))
                 ],
               )),
-          Container(
-              color: const Color(0xFF161314),
-              child: Column(
-                children: [
-                  Text('Titulo noticia', style: TextStyle(fontSize: 35, color: Colors.white, decoration: TextDecoration.underline)),
-                  Padding(
-                      padding: EdgeInsets.all(15),
-                      child: Text(
-                        'Welcome to the first edition of web3 weekly, a newsletter from a16z crypto that curates resources from us, and from others, for those seeking...',
-                        style: TextStyle(fontSize: 20, color: Colors.white),
-                        textAlign: TextAlign.center,
-                      ))
-                ],
-              ))
         ])));
+  }
+}
+
+class InfoBox extends StatelessWidget {
+  var title = '';
+  var description = '';
+
+  InfoBox({Key? key, this.title = '', this.description = ''}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        color: const Color(0xFF161314),
+        child: Column(
+          children: [
+            Text(title, style: const TextStyle(fontSize: 35, color: Colors.white, decoration: TextDecoration.underline)),
+            Padding(padding: const EdgeInsets.all(15), child: Text(description, style: const TextStyle(fontSize: 20, color: Colors.white), textAlign: TextAlign.center))
+          ],
+        ));
   }
 }
