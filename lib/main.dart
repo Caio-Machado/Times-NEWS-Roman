@@ -17,7 +17,7 @@ class MainWidget extends StatelessWidget {
               child: Menu(),
               backgroundColor: const Color(0xFF161314),
             ),
-            appBar: AppBar(title: const Center(child: Text('Times NEWS Roman', style: TextStyle(fontFamily: 'brushtip', fontSize: 25)))),
+            appBar: AppBar(title: const Center(child: Text('Times NEWS Roman', style: TextStyle(fontFamily: 'brushtip', fontSize: 30)))),
             body: Home()));
   }
 }
