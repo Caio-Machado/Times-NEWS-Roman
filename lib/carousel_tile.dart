@@ -32,7 +32,7 @@ class CarouselTile extends StatelessWidget {
                       ))
                 ],
               )),
-          InfoBox(title: 'Titulo Teste que tem que ser long', description: ' virar lorem ipsum dolor...')
+          InfoBox(title: 'Titulo Teste que tem que ser longo', description: ' virar lorem ipsum dolor...')
         ])));
   }
 }
@@ -41,11 +41,19 @@ class InfoBox extends StatelessWidget {
   var title = '';
   var description = '';
 
+  double adjustsWidth(double screenWidth, double margin) {
+    if (screenWidth >= 500) {
+      return 450;
+    }
+    return screenWidth - (margin * 2);
+  }
+
   InfoBox({Key? key, this.title = '', this.description = ''}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
+        width: adjustsWidth(MediaQuery.of(context).size.width, 25),
         margin: const EdgeInsets.all(25),
         color: const Color(0xFF161314),
         child: Padding(
