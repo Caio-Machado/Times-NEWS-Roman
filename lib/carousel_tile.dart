@@ -5,7 +5,7 @@ class CarouselTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        decoration: BoxDecoration(image: DecorationImage(colorFilter: ColorFilter.mode(Colors.black, BlendMode.modulate), image: NetworkImage('https://substackcdn.com/image/fetch/w_1200,h_600,c_limit,f_jpg,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fccb48d1f-2a82-45be-996e-a34b6126af34_1280x1280.png', color: const Color.fromRGBO(255, 255, 255, 0.5)), fit: BoxFit.cover)),
+        decoration: BoxDecoration(image: DecorationImage(colorFilter: ColorFilter.mode(Colors.black, BlendMode.modulate), image: NetworkImage('https://substackcdn.com/image/fetch/w_1200,h_600,c_limit,f_jpg,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fccb48d1f-2a82-45be-996e-a34b6126af34_1280x1280.png'), fit: BoxFit.cover)),
         child: SingleChildScrollView(
             child: Column(children: [
           Container(
