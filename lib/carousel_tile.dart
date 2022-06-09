@@ -54,7 +54,7 @@ class InfoBox extends StatelessWidget {
             padding: const EdgeInsets.all(15),
             child: Column(
               children: [
-                Text(title, style: const TextStyle(fontSize: 35, color: Colors.white, decoration: TextDecoration.underline), textAlign: TextAlign.center),
+                Text(title, style: const TextStyle(fontSize: 27, color: Colors.white, decoration: TextDecoration.underline), textAlign: TextAlign.center),
                 Padding(padding: const EdgeInsets.only(top: 20), child: Text(description, style: const TextStyle(fontSize: 20, color: Colors.white), textAlign: TextAlign.center))
               ],
             )));
