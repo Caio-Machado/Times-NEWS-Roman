@@ -32,6 +32,7 @@ class CarouselTile extends StatelessWidget {
                       ))
                 ],
               )),
+          InfoBox(title: 'Titulo Teste', description: 'Descrição teste')
         ])));
   }
 }
