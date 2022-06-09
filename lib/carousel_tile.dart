@@ -29,7 +29,7 @@ class CarouselTile extends StatelessWidget {
                   Transform.rotate(
                       angle: 270 * pi / 180,
                       child: GestureDetector(
-                        child: Icon(Icons.arrow_circle_down, size: 80, color: Colors.white),
+                        child: Icon(Icons.arrow_circle_down, size: 75, color: Colors.white),
                       ))
                 ],
               )),
