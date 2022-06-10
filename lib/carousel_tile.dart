@@ -6,7 +6,7 @@ class CarouselTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: const EdgeInsets.all(7),
+        margin: const EdgeInsets.all(13),
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(color: Colors.black.withOpacity(1), spreadRadius: 3, blurRadius: 5, offset: const Offset(0, 3))
         ], borderRadius: const BorderRadius.all(Radius.circular(15)), image: DecorationImage(colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.65), BlendMode.darken), image: NetworkImage('https://s.abcnews.com/images/US/maryland-shooting-ht-ps-220609_1654806584945_hpMain_16x9_1600.jpg'), fit: BoxFit.cover)),
