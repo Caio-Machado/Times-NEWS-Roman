@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'menu.dart';
-import 'home.dart';
+import 'home/home.dart';
 
 void main() => runApp(MainWidget());
 
@@ -11,13 +11,13 @@ class MainWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: ThemeData(appBarTheme: AppBarTheme(backgroundColor: const Color(0xFF161314))),
+        theme: ThemeData(appBarTheme: const AppBarTheme(backgroundColor: Color(0xFF161314))),
         home: Scaffold(
             drawer: Drawer(
               child: Menu(),
-              backgroundColor: const Color.fromRGBO(22, 19, 20, 1),
+              backgroundColor: const Color(0xFF161314),
             ),
-            appBar: AppBar(title: const Center(child: Text('Times NEWS Roman', style: TextStyle(fontFamily: 'brushtip', fontSize: 20)))),
+            appBar: AppBar(title: const Center(child: Text('Times NEWS Roman', style: TextStyle(fontFamily: 'brushtip', fontSize: 30)))),
             body: Home()));
   }
 }
