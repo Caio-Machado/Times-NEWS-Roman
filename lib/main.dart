@@ -11,7 +11,7 @@ class MainWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: ThemeData(appBarTheme: AppBarTheme(backgroundColor: const Color(0xFF161314))),
+        theme: ThemeData(appBarTheme: const AppBarTheme(backgroundColor: Color(0xFF161314))),
         home: Scaffold(
             drawer: Drawer(
               child: Menu(),

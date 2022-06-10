@@ -2,6 +2,13 @@ import 'package:flutter/material.dart';
 import 'carousel_tile.dart';
 
 class Carousel extends StatelessWidget {
+  final _controller = PageController(initialPage: 0);
+
+  @override
+  void dispose() {
+    _controller.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -9,6 +16,7 @@ class Carousel extends StatelessWidget {
       children: <Widget>[
         Expanded(
             child: PageView.builder(
+                controller: _controller,
                 itemCount: 7,
                 itemBuilder: (_, currentIndex) {
                   return CarouselTile(
