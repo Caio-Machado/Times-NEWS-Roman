@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'list_news/list_news.dart';
 
 class Menu extends StatelessWidget {
   Menu({Key? key}) : super(key: key);
@@ -17,12 +18,20 @@ class Menu extends StatelessWidget {
               leading: Icon(Icons.home, size: 27, color: Colors.white),
               title: Text('Início', style: TextStyle(fontSize: 20, color: Colors.white)),
             )),
-        const Padding(
-            padding: EdgeInsets.only(top: 10, bottom: 10),
-            child: ListTile(
-              leading: Icon(Icons.attach_money, size: 27, color: Colors.white),
-              title: Text('Negócios', style: TextStyle(fontSize: 15, color: Colors.white)),
-            )),
+        GestureDetector(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ListNews(),
+                  ));
+            },
+            child: const Padding(
+                padding: EdgeInsets.only(top: 10, bottom: 10),
+                child: ListTile(
+                  leading: Icon(Icons.attach_money, size: 27, color: Colors.white),
+                  title: Text('Negócios', style: TextStyle(fontSize: 15, color: Colors.white)),
+                ))),
         const Padding(
             padding: EdgeInsets.only(top: 10, bottom: 10),
             child: ListTile(
