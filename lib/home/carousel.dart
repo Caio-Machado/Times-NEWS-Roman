@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
 import 'carousel_tile.dart';
 
 class Carousel extends StatelessWidget {
@@ -10,7 +9,7 @@ class Carousel extends StatelessWidget {
       children: <Widget>[
         Expanded(
             child: PageView.builder(
-                itemCount: 3,
+                itemCount: 7,
                 itemBuilder: (_, currentIndex) {
                   return CarouselTile();
                 }))

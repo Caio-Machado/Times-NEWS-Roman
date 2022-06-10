@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'menu.dart';
-import 'home.dart';
+import 'home/home.dart';
 
 void main() => runApp(MainWidget());
 

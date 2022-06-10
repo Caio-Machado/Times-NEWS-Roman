@@ -1,20 +1,27 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
-import 'configs.dart';
+import '/configs.dart';
 
 class CarouselTile extends StatelessWidget {
+  var categoryTitle = '';
+  var newsTitle = '';
+  var description = '';
+  var image = '';
+
+  CarouselTile({Key? key, this.categoryTitle = '', this.newsTitle = '', this.description = '', this.image = ''}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
         margin: const EdgeInsets.all(13),
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(color: Colors.black.withOpacity(1), spreadRadius: 3, blurRadius: 5, offset: const Offset(0, 3))
-        ], borderRadius: const BorderRadius.all(Radius.circular(15)), image: DecorationImage(colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.65), BlendMode.darken), image: NetworkImage('https://s.abcnews.com/images/US/maryland-shooting-ht-ps-220609_1654806584945_hpMain_16x9_1600.jpg'), fit: BoxFit.cover)),
+        ], borderRadius: const BorderRadius.all(Radius.circular(15)), image: DecorationImage(colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.65), BlendMode.darken), image: NetworkImage(image), fit: BoxFit.cover)),
         child: SingleChildScrollView(
             child: Column(children: [
-          Header(title: 'Título Categoria'),
+          Header(title: categoryTitle),
           Navigation(),
-          InfoBox(title: 'Titulo Teste que tem que ser longo', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada nibh odio, non volutpat nibh venenatis ac. Morbi vel imperdiet lorem, nec fermentum eros. Sed sit amet felis mauris. Quisque porta lacus non est viverra, et eleifend metus volutpat. Vivamus ut quam ipsum. Nunc non tristique enim. Etiam quam libero, blandit eget magna non, tincidunt luctus mi. Curabitur quis erat at justo condimentum consectetur a ut mauris.')
+          InfoBox(title: newsTitle, description: description)
         ])));
   }
 }
