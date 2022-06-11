@@ -7,7 +7,7 @@ import 'search_result.dart';
 class ListNews extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBarTemplate(), drawer: Menu(), body: Container(color: Colors.orange));
+    return Container(color: Colors.orange);
   }
 }
 
