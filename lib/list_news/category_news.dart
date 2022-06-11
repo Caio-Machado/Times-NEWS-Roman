@@ -52,7 +52,8 @@ class CategoryNews extends StatelessWidget {
               BuildContext context,
               int index,
             ) {
-              return ListTile(title: news[index]['title']),
+              return ListTile(
+                title: news[index]['title'],
               );
             },
           ),
