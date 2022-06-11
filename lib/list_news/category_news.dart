@@ -40,21 +40,21 @@ class CategoryNews extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Column(
-        children: [
-          ListView.builder(
-            shrinkWrap: true,
-            itemCount: news.length,
-            itemBuilder: (BuildContext context, int index) {
-              return SingleChildScrollView(
-                child: NewsTile(
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            ListView.builder(
+              shrinkWrap: true,
+              itemCount: news.length,
+              itemBuilder: (BuildContext context, int index) {
+                return NewsTile(
                   title: news[index]['title'],
                   image: news[index]['image'],
-                ),
-              );
-            },
-          ),
-        ],
+                );
+              },
+            ),
+          ],
+        ),
       ),
     );
   }
