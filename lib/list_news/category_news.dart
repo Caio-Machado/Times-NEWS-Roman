@@ -47,7 +47,7 @@ class CategoryNews extends StatelessWidget {
               shrinkWrap: true,
               itemCount: 1,
               itemBuilder: (BuildContext context, int index) {
-                return ListTile(title: news[index]['title']);
+                return Container(child: Text(news[index]['title']));
               },
             ),
           ),
