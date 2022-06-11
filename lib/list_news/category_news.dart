@@ -52,16 +52,7 @@ class CategoryNews extends StatelessWidget {
               BuildContext context,
               int index,
             ) {
-              return Container(
-                child: Padding(
-                  padding: const EdgeInsets.all(15),
-                  child: Column(
-                    children: [
-                      Image.network(news[index]['image']),
-                      Text(news[index]['title']),
-                    ],
-                  ),
-                ),
+              return ListTile(title: news[index]['title']),
               );
             },
           ),
