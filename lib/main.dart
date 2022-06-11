@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'menu.dart';
 import 'home/home.dart';
+import 'templates/appbar.dart';
 
 void main() => runApp(MainWidget());
 
@@ -17,7 +18,6 @@ class MainWidget extends StatelessWidget {
               child: Menu(),
               backgroundColor: const Color(0xFF161314),
             ),
-            appBar: AppBar(title: const Center(child: Text('Times NEWS Roman', style: TextStyle(fontFamily: 'brushtip', fontSize: 30)))),
             body: Home()));
   }
 }
