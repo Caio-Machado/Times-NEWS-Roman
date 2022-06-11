@@ -45,16 +45,18 @@ class CategoryNews extends StatelessWidget {
           CategoryHeader(
             title: categoryTitle,
           ),
-          ListView.builder(
-            itemCount: 7,
-            itemBuilder: (
-              BuildContext context,
-              int index,
-            ) {
-              return ListTile(
-                title: news[index]['title'],
-              );
-            },
+          Container(
+            child: ListView.builder(
+              itemCount: 7,
+              itemBuilder: (
+                BuildContext context,
+                int index,
+              ) {
+                return ListTile(
+                  title: news[index]['title'],
+                );
+              },
+            ),
           ),
         ],
       ),
