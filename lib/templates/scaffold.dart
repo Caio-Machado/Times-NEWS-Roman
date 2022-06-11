@@ -4,7 +4,9 @@ import '/templates/menu.dart';
 import '/templates/appbar.dart';
 
 class ScaffoldTemplate extends StatelessWidget {
-  Widget content = Container();
+  Widget? content = Container();
+
+  ScaffoldTemplate({Key? key, this.content}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '/templates/menu.dart';
-import 'templates/appbar.dart';
+import 'templates/scaffold.dart';
+import 'home/home.dart';
 
 void main() => runApp(MainWidget());
 
@@ -10,6 +10,11 @@ class MainWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(theme: ThemeData(appBarTheme: const AppBarTheme(backgroundColor: Color(0xFF161314))), home: Scaffold(appBar: AppBarTemplate(), drawer: Menu(), body: Home()));
+    return MaterialApp(
+      theme: ThemeData(appBarTheme: const AppBarTheme(backgroundColor: Color(0xFF161314))),
+      home: ScaffoldTemplate(
+        content: Home(),
+      ),
+    );
   }
 }
