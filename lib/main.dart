@@ -14,6 +14,7 @@ class MainWidget extends StatelessWidget {
     return MaterialApp(
         theme: ThemeData(appBarTheme: const AppBarTheme(backgroundColor: Color(0xFF161314))),
         home: Scaffold(
+            appBar: AppBarTemplate(),
             drawer: Drawer(
               child: Menu(),
               backgroundColor: const Color(0xFF161314),
