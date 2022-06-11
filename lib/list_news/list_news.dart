@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import '/templates/appbar.dart';
+import '/menu.dart';
 import 'category_news.dart';
 import 'search_result.dart';
 
 class ListNews extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(color: Colors.orange);
+    return Scaffold(appBar: AppBarTemplate(), drawer: Menu(), body: Container(color: Colors.orange));
   }
 }
 
