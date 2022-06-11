@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '/templates/appbar.dart';
-import '/menu.dart';
+import '/templates/menu.dart';
 import 'category_news.dart';
 import 'search_result.dart';
 
