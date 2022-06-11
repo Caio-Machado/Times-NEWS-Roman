@@ -42,7 +42,7 @@ class CategoryNews extends StatelessWidget {
     return Container(
       child: Column(
         children: [
-          Container(
+          SingleChildScrollView(
             child: ListView.builder(
               shrinkWrap: true,
               itemCount: news.length,
