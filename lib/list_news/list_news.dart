@@ -13,21 +13,14 @@ class ListNews extends StatelessWidget {
   }
 }
 
-class NewsTile extends StatelessWidget {
-  var title = '';
-  var image = '';
-
-  NewsTile({Key? key, this.title = '', this.image = ''}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(15),
-      child: Column(
-        children: [
-          Image.network(image),
-          Text(title),
-        ],
-      ),
-    );
-  }
+Widget NewsTile(String title, String image) {
+  return Padding(
+    padding: const EdgeInsets.all(15),
+    child: Column(
+      children: [
+        Image.network(image),
+        Text(title),
+      ],
+    ),
+  );
 }
