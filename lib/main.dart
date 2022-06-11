@@ -13,8 +13,12 @@ class MainWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        '/': (context) => Home(),
-        '/list': (context) => CategoryNews(),
+        '/': (context) => ScaffoldTemplate(
+              content: Home(),
+            ),
+        '/list': (context) => ScaffoldTemplate(
+              content: CategoryNews(),
+            ),
       },
       theme: ThemeData(appBarTheme: const AppBarTheme(backgroundColor: Color(0xFF161314))),
       initialRoute: '/',
