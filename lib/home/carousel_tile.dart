@@ -17,7 +17,12 @@ class CarouselTile extends StatelessWidget {
       margin: const EdgeInsets.all(13),
       decoration: BoxDecoration(
         boxShadow: [
-          BoxShadow(color: Colors.black.withOpacity(1), spreadRadius: 3, blurRadius: 5, offset: const Offset(0, 3))
+          BoxShadow(
+            color: Colors.black.withOpacity(1),
+            spreadRadius: 3,
+            blurRadius: 5,
+            offset: const Offset(0, 3),
+          ),
         ],
         borderRadius: const BorderRadius.all(
           Radius.circular(15),
@@ -83,8 +88,26 @@ class InfoBox extends StatelessWidget {
             padding: const EdgeInsets.all(15),
             child: Column(
               children: [
-                Text(title, style: const TextStyle(fontSize: 27, color: Colors.white, decoration: TextDecoration.underline), textAlign: TextAlign.center),
-                Padding(padding: const EdgeInsets.only(top: 20), child: Text(description, style: const TextStyle(fontSize: 20, color: Colors.white), textAlign: TextAlign.center))
+                Text(
+                  title,
+                  style: const TextStyle(
+                    fontSize: 27,
+                    color: Colors.white,
+                    decoration: TextDecoration.underline,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 20),
+                  child: Text(
+                    description,
+                    style: const TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
               ],
             )));
   }
