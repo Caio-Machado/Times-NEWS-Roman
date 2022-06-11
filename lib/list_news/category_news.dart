@@ -46,8 +46,7 @@ class CategoryNews extends StatelessWidget {
             title: categoryTitle,
           ),
           ListView.builder(
-            padding: const EdgeInsets.all(8),
-            itemCount: news.length,
+            itemCount: 7,
             itemBuilder: (
               BuildContext context,
               int index,
