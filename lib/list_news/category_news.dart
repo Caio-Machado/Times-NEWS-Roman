@@ -42,17 +42,17 @@ class CategoryNews extends StatelessWidget {
     return Container(
       child: Column(
         children: [
-          SingleChildScrollView(
-            child: ListView.builder(
-              shrinkWrap: true,
-              itemCount: news.length,
-              itemBuilder: (BuildContext context, int index) {
-                return NewsTile(
+          ListView.builder(
+            shrinkWrap: true,
+            itemCount: news.length,
+            itemBuilder: (BuildContext context, int index) {
+              return SingleChildScrollView(
+                child: NewsTile(
                   title: news[index]['title'],
                   image: news[index]['image'],
-                );
-              },
-            ),
+                ),
+              );
+            },
           ),
         ],
       ),
