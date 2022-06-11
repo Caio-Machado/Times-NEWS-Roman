@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import '/templates/appbar.dart';
-import '/templates/menu.dart';
-import 'category_news.dart';
-import 'search_result.dart';
 
 class ListNews extends StatelessWidget {
   @override
