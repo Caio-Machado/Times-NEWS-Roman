@@ -13,16 +13,33 @@ class CarouselTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: const EdgeInsets.all(13),
-        decoration: BoxDecoration(boxShadow: [
+      margin: const EdgeInsets.all(13),
+      decoration: BoxDecoration(
+        boxShadow: [
           BoxShadow(color: Colors.black.withOpacity(1), spreadRadius: 3, blurRadius: 5, offset: const Offset(0, 3))
-        ], borderRadius: const BorderRadius.all(Radius.circular(15)), image: DecorationImage(colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.65), BlendMode.darken), image: NetworkImage(image), fit: BoxFit.cover)),
-        child: SingleChildScrollView(
-            child: Column(children: [
-          Header(title: categoryTitle),
-          Navigation(),
-          InfoBox(title: newsTitle, description: description)
-        ])));
+        ],
+        borderRadius: const BorderRadius.all(
+          Radius.circular(15),
+        ),
+        image: DecorationImage(
+          colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.65), BlendMode.darken),
+          image: NetworkImage(image),
+          fit: BoxFit.cover,
+        ),
+      ),
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            Header(title: categoryTitle),
+            Navigation(),
+            InfoBox(
+              title: newsTitle,
+              description: description,
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
 
