@@ -47,7 +47,10 @@ class CategoryNews extends StatelessWidget {
               shrinkWrap: true,
               itemCount: 1,
               itemBuilder: (BuildContext context, int index) {
-                return Container(child: Text(news[index]['title']));
+                return NewsTile(
+                  title: news[index]['title'],
+                  image: news[index]['image'],
+                );
               },
             ),
           ),
