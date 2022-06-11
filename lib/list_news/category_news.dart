@@ -46,9 +46,7 @@ class CategoryNews extends StatelessWidget {
             child: ListView.builder(
               itemCount: 1,
               itemBuilder: (BuildContext context, int index) {
-                return ListTile(
-                  title: news[index]['title'],
-                );
+                return ListTile(title: news[index]['title']);
               },
             ),
           ),
