@@ -45,20 +45,20 @@ class CategoryNews extends StatelessWidget {
           CategoryHeader(
             title: categoryTitle,
           ),
-          SingleChildScrollView(
-            child: ListView.builder(
-              padding: const EdgeInsets.all(8),
-              itemCount: news.length,
-              itemBuilder: (
-                BuildContext context,
-                int index,
-              ) {
-                return NewsTile(
+          ListView.builder(
+            padding: const EdgeInsets.all(8),
+            itemCount: news.length,
+            itemBuilder: (
+              BuildContext context,
+              int index,
+            ) {
+              return Container(
+                child: NewsTile(
                   title: news[index]['title'],
                   image: news[index]['image'],
-                );
-              },
-            ),
+                ),
+              );
+            },
           ),
         ],
       ),
