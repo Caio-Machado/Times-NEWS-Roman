@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 import '/configs.dart';
+import '/templates/generic_templates.dart';
 
 class CarouselTile extends StatelessWidget {
   var categoryTitle = '';
@@ -30,7 +31,7 @@ class CarouselTile extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            Header(title: categoryTitle),
+            CategoryHeader(title: categoryTitle),
             Navigation(),
             InfoBox(
               title: newsTitle,
@@ -40,23 +41,6 @@ class CarouselTile extends StatelessWidget {
         ),
       ),
     );
-  }
-}
-
-class Header extends StatelessWidget {
-  var title = '';
-
-  Header({Key? key, this.title = ''}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-        margin: const EdgeInsets.only(top: 65),
-        padding: const EdgeInsets.only(top: 10, bottom: 10),
-        color: const Color(0xFF161314),
-        child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Text(title, style: const TextStyle(fontSize: 25, color: Colors.white))
-        ]));
   }
 }
 

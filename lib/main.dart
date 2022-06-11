@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'templates/scaffold.dart';
+import 'templates/generic_templates.dart';
 import 'home/home.dart';
-import 'list_news/category_news.dart';
+import 'list_news/list_news.dart';
 
 void main() => runApp(MainWidget());
 
@@ -17,7 +17,7 @@ class MainWidget extends StatelessWidget {
               content: Home(),
             ),
         '/list': (context) => ScaffoldTemplate(
-              content: CategoryNews(),
+              content: ListNews(categoryTitle: 'business'),
             ),
       },
       theme: ThemeData(appBarTheme: const AppBarTheme(backgroundColor: Color(0xFF161314))),
