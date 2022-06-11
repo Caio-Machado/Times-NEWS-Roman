@@ -47,7 +47,7 @@ class CategoryNews extends StatelessWidget {
           ),
           Container(
             child: ListView.builder(
-              itemCount: 7,
+              itemCount: 1,
               itemBuilder: (
                 BuildContext context,
                 int index,
