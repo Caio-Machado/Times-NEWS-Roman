@@ -42,9 +42,6 @@ class CategoryNews extends StatelessWidget {
     return Container(
       child: Column(
         children: [
-          CategoryHeader(
-            title: categoryTitle,
-          ),
           Container(
             child: ListView.builder(
               itemCount: 1,
