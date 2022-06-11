@@ -45,7 +45,7 @@ class CategoryNews extends StatelessWidget {
           Container(
             child: ListView.builder(
               shrinkWrap: true,
-              itemCount: 1,
+              itemCount: news.length,
               itemBuilder: (BuildContext context, int index) {
                 return NewsTile(
                   title: news[index]['title'],
