@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'menu.dart';
-import 'home.dart';
+import 'templates/generic_templates.dart';
+import 'home/home.dart';
+import 'list_news/list_news.dart';
 
 void main() => runApp(MainWidget());
 
@@ -11,13 +12,16 @@ class MainWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: ThemeData(appBarTheme: AppBarTheme(backgroundColor: const Color(0xFF161314))),
-        home: Scaffold(
-            drawer: Drawer(
-              child: Menu(),
-              backgroundColor: const Color.fromRGBO(22, 19, 20, 1),
+      routes: {
+        '/': (context) => ScaffoldTemplate(
+              content: Home(),
             ),
-            appBar: AppBar(title: const Center(child: Text('Times NEWS Roman', style: TextStyle(fontFamily: 'brushtip', fontSize: 20)))),
-            body: Home()));
+        '/list': (context) => ScaffoldTemplate(
+              content: ListNews(categoryTitle: 'business'),
+            ),
+      },
+      theme: ThemeData(appBarTheme: const AppBarTheme(backgroundColor: Color(0xFF161314))),
+      initialRoute: '/',
+    );
   }
 }
