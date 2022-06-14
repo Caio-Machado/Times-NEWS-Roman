@@ -12,7 +12,7 @@ class CategoryNews extends StatelessWidget {
     },
     {
       'title': 'Tony y Mimy Succar estrenaron "Fronteras" junto a Anthony Chávez | Radio Panamericana - Radio Panamericana',
-      'image': 'https://i.ytimg.com/vi/JUNApDAbNak/maxresdefault.jpg',
+      'image': 'https://cdn.cnn.com/cnnnext/dam/assets/220613141421-yellowstone-national-park-flooding-super-tease.jpg',
     },
     {
       'title': '심장이식 수술비 1500만원 내준 독지가, 알고 보니 유재석\" - 한국경제',
