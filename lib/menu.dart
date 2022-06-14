@@ -10,7 +10,7 @@ class Menu extends StatelessWidget {
       children: [
         GestureDetector(
             onTap: () {
-              Navigator.pushNamedAndRemoveUntil(context, '/list', (route) => false);
+              Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false);
             },
             child: const ListTile(
               leading: Icon(Icons.home, size: 27, color: Colors.white),
