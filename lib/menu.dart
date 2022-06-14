@@ -23,7 +23,6 @@ class Menu extends StatelessWidget {
         GestureDetector(
             onTap: () {
               changeScreen(context, '/list');
-              ;
             },
             child: const Padding(
                 padding: EdgeInsets.only(top: 10, bottom: 10),
