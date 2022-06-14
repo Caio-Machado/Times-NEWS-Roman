@@ -8,19 +8,17 @@ class Menu extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        Container(
-            padding: const EdgeInsets.only(top: 4, bottom: 8),
-            decoration: const BoxDecoration(
-                border: Border(
-              bottom: BorderSide(width: 1, color: Colors.white),
-            )),
+        GestureDetector(
+            onTap: () {
+              Navigator.pushNamedAndRemoveUntil(context, '/list', (route) => false);
+            },
             child: const ListTile(
               leading: Icon(Icons.home, size: 27, color: Colors.white),
               title: Text('Início', style: TextStyle(fontSize: 20, color: Colors.white)),
             )),
         GestureDetector(
             onTap: () {
-              Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false);
+              Navigator.pushNamedAndRemoveUntil(context, '/list', (route) => false);
             },
             child: const Padding(
                 padding: EdgeInsets.only(top: 10, bottom: 10),
