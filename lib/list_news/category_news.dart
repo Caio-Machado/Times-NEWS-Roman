@@ -24,7 +24,7 @@ class CategoryNews extends StatelessWidget {
     },
     {
       'title': 'Max Q: Suit yourself - TechCrunch',
-      'image': 'https://techcrunch.com/wp-content/uploads/2019/12/tc-space-stars.gif?w=709',
+      'image': 'https://storage.googleapis.com/afs-prod/media/b3643d735c664f9bb07b38472675e81d/3000.jpeg',
     },
     {
       'title': 'Darvin Ham, nuevo técnico de los Lakers: "No hay éxito sin sacrificio" - Agencia EFE',
