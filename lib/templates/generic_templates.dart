@@ -12,7 +12,7 @@ class ScaffoldTemplate extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarTemplate(),
-      endDrawer: Menu(),
+      endDrawer: Drawer(child: Menu()),
       body: content,
     );
   }
