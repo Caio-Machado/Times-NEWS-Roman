@@ -28,7 +28,7 @@ class CategoryNews extends StatelessWidget {
     },
     {
       'title': 'Darvin Ham, nuevo técnico de los Lakers: "No hay éxito sin sacrificio" - Agencia EFE',
-      'image': 'https://amp.theguardian.com/sport/2022/jun/13/phil-mickelson-saudi-arabia-liv-golf-series-9-11-criticism',
+      'image': 'https://cdn.cnn.com/cnnnext/dam/assets/220613123114-01-buesching-mastodon-super-tease.jpg',
     },
     {
       'title': 'Vyšší výkon a řada dalších vychytávek. Apple odhalil dva nové MacBooky - Novinky.cz',
