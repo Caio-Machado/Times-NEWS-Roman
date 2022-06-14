@@ -20,7 +20,7 @@ class CategoryNews extends StatelessWidget {
     },
     {
       'title': 'Cálculos renales: ¿cómo se prepara el jugo de apio para tratarlos naturalmente? - Revista Semana',
-      'image': 'https://www.semana.com/resizer/SN9RR5ZIAv4YECgbbn3qEVWqQbo=/1200x646/filters:format(jpg):quality(50)/cloudfront-us-east-1.images.arcpublishing.com/semana/DSKZO6YRLNCV3BXTFQUTADVS7Y.jpg',
+      'image': 'https://img.hankyung.com/photo/202206/03.21269352.1.jpg',
     },
     {
       'title': 'Max Q: Suit yourself - TechCrunch',
