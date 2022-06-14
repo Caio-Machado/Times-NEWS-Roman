@@ -16,7 +16,7 @@ class CategoryNews extends StatelessWidget {
     },
     {
       'title': '심장이식 수술비 1500만원 내준 독지가, 알고 보니 유재석\" - 한국경제',
-      'image': 'https://nypost.com/wp-content/uploads/sites/2/2022/06/jason-alexander-charged-99.jpg',
+      'image': 'https://cdn.vox-cdn.com/thumbor/Qy11JoSsJ5P9s9QWW0YgoIrHBPM=/0x429:6048x3595/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23583834/1238379839.jpg',
     },
     {
       'title': 'Cálculos renales: ¿cómo se prepara el jugo de apio para tratarlos naturalmente? - Revista Semana',
