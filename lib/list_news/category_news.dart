@@ -15,7 +15,7 @@ class CategoryNews extends StatelessWidget {
       'image': 'https://cdn.cnn.com/cnnnext/dam/assets/220613141421-yellowstone-national-park-flooding-super-tease.jpg',
     },
     {
-      'title': '심장이식 수술비 1500만원 내준 독지가, 알고 보니 유재석\" - 한국경제',
+      'title': 'Western wildfires force evacuations in Arizona, California - The Associated Press - en Español',
       'image': 'https://cdn.vox-cdn.com/thumbor/Qy11JoSsJ5P9s9QWW0YgoIrHBPM=/0x429:6048x3595/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23583834/1238379839.jpg',
     },
     {
@@ -31,7 +31,7 @@ class CategoryNews extends StatelessWidget {
       'image': 'https://cdn.cnn.com/cnnnext/dam/assets/220613123114-01-buesching-mastodon-super-tease.jpg',
     },
     {
-      'title': 'Vyšší výkon a řada dalších vychytávek. Apple odhalil dva nové MacBooky - Novinky.cz',
+      'title': 'Ohio gun laws: Gov. Mike DeWine signs armed teacher training bill - The Columbus Dispatch',
       'image': 'https://d15-a.sdn.cz/d_15/c_img_QL_r/VkTDAp.jpeg?fl=cro,0,1,937,527%7Cres,1200,,1%7Cjpg,80,,1',
     }
   ];
