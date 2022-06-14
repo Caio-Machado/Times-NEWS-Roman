@@ -4,13 +4,17 @@ import 'list_news/list_news.dart';
 class Menu extends StatelessWidget {
   Menu({Key? key}) : super(key: key);
 
+  void changeScreen(context, route) {
+    Navigator.pushNamedAndRemoveUntil(context, route, (route) => false);
+  }
+
   @override
   Widget build(BuildContext context) {
     return ListView(
       children: [
         GestureDetector(
             onTap: () {
-              Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false);
+              changeScreen(context, '/');
             },
             child: const ListTile(
               leading: Icon(Icons.home, size: 27, color: Colors.white),
@@ -18,7 +22,8 @@ class Menu extends StatelessWidget {
             )),
         GestureDetector(
             onTap: () {
-              Navigator.pushNamedAndRemoveUntil(context, '/list', (route) => false);
+              changeScreen(context, '/list');
+              ;
             },
             child: const Padding(
                 padding: EdgeInsets.only(top: 10, bottom: 10),
