@@ -20,11 +20,7 @@ class Menu extends StatelessWidget {
             )),
         GestureDetector(
             onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => ListNews(),
-                  ));
+              Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false);
             },
             child: const Padding(
                 padding: EdgeInsets.only(top: 10, bottom: 10),
