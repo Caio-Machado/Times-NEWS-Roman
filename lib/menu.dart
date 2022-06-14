@@ -12,7 +12,7 @@ class Menu extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        GestureDetector(
+        InkWell(
             onTap: () {
               changeScreen(context, '/');
             },
@@ -20,7 +20,7 @@ class Menu extends StatelessWidget {
               leading: Icon(Icons.home, size: 27, color: Colors.white),
               title: Text('Início', style: TextStyle(fontSize: 20, color: Colors.white)),
             )),
-        GestureDetector(
+        InkWell(
             onTap: () {
               changeScreen(context, '/list');
             },
