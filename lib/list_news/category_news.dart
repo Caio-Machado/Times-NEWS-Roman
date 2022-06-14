@@ -8,7 +8,7 @@ class CategoryNews extends StatelessWidget {
   List<Map<String, dynamic>> news = [
     {
       'title': 'Panorama de hidrocarburos y electricidad de Brasil: Saesa, EDP, Neoenergía y otras - BNamericas',
-      'image': 'https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/monkeypox-1655148677.jfif?crop=1.00xw:1.00xh;0,0&resize=1200:*',
+      'image': 'https://static01.nyt.com/images/2022/06/13/multimedia/13bear-market-blog-promo/13bear-market-blog-promo-facebookJumbo.jpg',
     },
     {
       'title': 'Tony y Mimy Succar estrenaron "Fronteras" junto a Anthony Chávez | Radio Panamericana - Radio Panamericana',
