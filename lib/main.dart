@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'package:timesnewsroman/templates/generic_templates.dart';
-import 'home/home.dart';
-import 'list_news/list_news.dart';
-
+import 'package:timesnewsroman/components/template/generic_templates.dart';
+import 'package:timesnewsroman/pages/home.dart';
+import 'package:timesnewsroman/pages/list_news.dart';
 void main() => runApp(MainWidget());
 
 class MainWidget extends StatelessWidget {
