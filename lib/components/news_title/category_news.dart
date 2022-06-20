@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:timesnewsroman/components/news_title/news_title.dart';
 
-import 'package:timesnewsroman/templates/generic_templates.dart';
-import 'list_news.dart';
+import 'package:timesnewsroman/components/template/generic_templates.dart';
 
 class CategoryNews extends StatelessWidget {
   String categoryTitle = '';
@@ -44,6 +44,7 @@ class CategoryNews extends StatelessWidget {
         child: Column(
           children: [
             ListView.builder(
+              physics: const NeverScrollableScrollPhysics(),
               shrinkWrap: true,
               itemCount: news.length,
               itemBuilder: (BuildContext context, int index) {
