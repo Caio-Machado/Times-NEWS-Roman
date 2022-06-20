@@ -11,7 +11,7 @@ class RequestService {
     if (q != null) params["q"] = q;
     if (pageSize != null) params["pageSize"] = pageSize;
 
-    var url = Uri.parse(baseUrl + "/").replace(queryParameters: params);
+    var url = Uri.parse(baseUrl + "/news/top-headlines").replace(queryParameters: params);
     return await get(url);
   }
 
@@ -22,7 +22,8 @@ class RequestService {
     if (searchIn != null) params["searchIn"] = searchIn;
     if (language != null) params["language"] = language;
 
-    var url = Uri.parse(baseUrl + "/").replace(queryParameters: params);
+    var url = Uri.parse(baseUrl + "/news/everything").replace(queryParameters: params);
     return await get(url);
   }
+
 }

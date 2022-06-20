@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 class Menu extends StatelessWidget {
   Menu({Key? key}) : super(key: key);
+
+  void abrir(){
+    canLaunch("http://www.google.com.br");
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +30,7 @@ class Menu extends StatelessWidget {
             ),
           ),
           GestureDetector(
-            onTap: () => Navigator.pushNamed(context, '/list_category'),
+            onTap: () => abrir(),
             child: const Padding(
               padding: EdgeInsets.only(top: 10, bottom: 10),
               child: ListTile(
