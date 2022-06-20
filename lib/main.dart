@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'templates/generic_templates.dart';
+import 'package:timesnewsroman/templates/generic_templates.dart';
 import 'home/home.dart';
 import 'list_news/list_news.dart';
 
@@ -12,16 +12,16 @@ class MainWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      routes: {
-        '/': (context) => ScaffoldTemplate(
-              content: Home(),
-            ),
-        '/list': (context) => ScaffoldTemplate(
-              content: ListNews(categoryTitle: 'business'),
-            ),
-      },
-      theme: ThemeData(appBarTheme: const AppBarTheme(backgroundColor: Color(0xFF161314))),
       initialRoute: '/',
+      routes: {
+        '/': (context) => Home(),
+        '/list_category': (context) => ListNews(categoryTitle: 'business')
+      },
+      theme: ThemeData(
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFF161314),
+        ),
+      ),
     );
   }
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '/templates/generic_templates.dart';
+import 'package:timesnewsroman/templates/generic_templates.dart';
 import 'list_news.dart';
 
 class CategoryNews extends StatelessWidget {
@@ -8,27 +8,27 @@ class CategoryNews extends StatelessWidget {
   List<Map<String, dynamic>> news = [
     {
       'title': 'Panorama de hidrocarburos y electricidad de Brasil: Saesa, EDP, Neoenergía y otras - BNamericas',
-      'image': 'https://www.bnamericas.com/assets/img/opengraphbna.jpg',
+      'image': 'https://static01.nyt.com/images/2022/06/18/us/18virus-briefing-cdc-1/18virus-briefing-cdc-1-facebookJumbo.jpg',
     },
     {
       'title': 'Tony y Mimy Succar estrenaron "Fronteras" junto a Anthony Chávez | Radio Panamericana - Radio Panamericana',
-      'image': 'https://i.ytimg.com/vi/JUNApDAbNak/maxresdefault.jpg',
+      'image': 'https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2022%2F0618%2Fr1026408_1296x729_16-9.jpg',
     },
     {
       'title': '심장이식 수술비 1500만원 내준 독지가, 알고 보니 유재석\" - 한국경제',
-      'image': 'https://img.hankyung.com/photo/202206/03.21269352.1.jpg',
+      'image': 'https://static01.nyt.com/images/2022/06/04/science/04uterine-cancer1/04uterine-cancer1-facebookJumbo.jpg',
     },
     {
       'title': 'Cálculos renales: ¿cómo se prepara el jugo de apio para tratarlos naturalmente? - Revista Semana',
-      'image': 'https://www.semana.com/resizer/SN9RR5ZIAv4YECgbbn3qEVWqQbo=/1200x646/filters:format(jpg):quality(50)/cloudfront-us-east-1.images.arcpublishing.com/semana/DSKZO6YRLNCV3BXTFQUTADVS7Y.jpg',
+      'image': 'https://cdn.cnn.com/cnnnext/dam/assets/220614231619-maggie-toulouse-oliver-file-restricted-100520-super-tease.jpg',
     },
     {
       'title': 'Max Q: Suit yourself - TechCrunch',
-      'image': 'https://techcrunch.com/wp-content/uploads/2019/12/tc-space-stars.gif?w=709',
+      'image': 'https://static01.nyt.com/images/2022/06/19/world/19colombia-election-promo-200pm/19colombia-election-promo-200pm-facebookJumbo.jpg',
     },
     {
       'title': 'Darvin Ham, nuevo técnico de los Lakers: "No hay éxito sin sacrificio" - Agencia EFE',
-      'image': 'http://estaticos.efe.com/efecom/recursos2/imagen.aspx?-P-2fL4Jfo8HOMjyjijS4BHwVVpj5ZhMJE3SQ4TncnkXVSTX-P-2bAoG0sxzXPZPAk5l-P-2fU5Ud-P-2bbsyGgZPeu4oIXzQLHk-P-2fw-P-3d-P-3d',
+      'image': 'https://tvline.com/wp-content/uploads/2022/06/the-summer-i-turned-pretty.jpg?w=620',
     },
     {
       'title': 'Vyšší výkon a řada dalších vychytávek. Apple odhalil dva nové MacBooky - Novinky.cz',
@@ -39,7 +39,7 @@ class CategoryNews extends StatelessWidget {
   CategoryNews({Key? key, this.categoryTitle = ''}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return ScaffoldTemplate(
       child: SingleChildScrollView(
         child: Column(
           children: [
