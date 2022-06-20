@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
 
 import '/templates/menu.dart';
-import '/templates/appbar.dart';
 
 class ScaffoldTemplate extends StatelessWidget {
-  Widget? content;
+  Widget? child;
 
-  ScaffoldTemplate({Key? key, this.content}) : super(key: key);
+  ScaffoldTemplate({Key? key, this.child}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarTemplate(),
-      endDrawer: Drawer(child: Menu()),
-      body: content,
+      endDrawer: Menu(),
+      body: child,
     );
   }
 }
@@ -46,4 +45,13 @@ class CategoryHeader extends StatelessWidget {
       ),
     );
   }
+}
+
+AppBar AppBarTemplate() {
+  return AppBar(
+    title: const Text(
+      'Times NEWS Roman',
+      style: TextStyle(fontFamily: 'brushtip', fontSize: 30),
+    ),
+  );
 }

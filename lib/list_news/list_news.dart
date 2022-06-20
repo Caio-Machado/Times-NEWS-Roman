@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'category_news.dart';
+import 'package:timesnewsroman/configs.dart';
 
 class ListNews extends StatelessWidget {
   String categoryTitle = '';
@@ -20,12 +21,37 @@ class NewsTile extends StatelessWidget {
   NewsTile({Key? key, this.title = '', this.image = ''}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(15),
+    return Container(
+      margin: EdgeInsets.all(20),
+      width: ResponsiveConfigs.adjustsWidth(
+        MediaQuery.of(context).size.width,
+        20,
+      ),
+      decoration: const BoxDecoration(
+        boxShadow: [
+          BoxShadow(
+            color: Color(0xFF161314),
+            spreadRadius: 1,
+            blurRadius: 3,
+            offset: Offset(0, 3),
+          ),
+        ],
+        borderRadius: BorderRadius.all(
+          Radius.circular(15),
+        ),
+      ),
       child: Column(
         children: [
           Image.network(image),
-          Text(title),
+          Padding(
+            padding: EdgeInsets.all(10),
+            child: Text(
+              title,
+              style: const TextStyle(
+                color: Color(0xFFFFFFFF),
+              ),
+            ),
+          ),
         ],
       ),
     );
