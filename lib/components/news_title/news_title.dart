@@ -30,7 +30,10 @@ class NewsTile extends StatelessWidget {
       ),
       child: Column(
         children: [
-          Image.network(image),
+          Image.network(image, 
+          errorBuilder: (context, error, stackTrace) {
+          return Image.network('https://www.cer-cavalos.com/images/not_found.png');
+        }),
           Padding(
             padding: EdgeInsets.all(10),
             child: Text(

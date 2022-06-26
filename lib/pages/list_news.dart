@@ -10,5 +10,6 @@ class ListNews extends StatelessWidget {
   Widget build(BuildContext context) {
     return categoryTitle != '' ? CategoryNews(categoryTitle: categoryTitle) : Container();
   }
+  
 }
 

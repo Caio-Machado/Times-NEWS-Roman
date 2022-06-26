@@ -14,7 +14,14 @@ class MainWidget extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => Home(),
-        '/list_category': (context) => ListNews(categoryTitle: 'business')
+        '/negocios': (context) => ListNews(categoryTitle: 'business'),
+        '/entreterimento': (context) => ListNews(categoryTitle: 'entertainment'),
+        '/geral': (context) => ListNews(categoryTitle: 'general'),
+        '/saude': (context) => ListNews(categoryTitle: 'health'),
+        '/ciencia': (context) => ListNews(categoryTitle: 'science'),
+        '/esportes': (context) => ListNews(categoryTitle: 'sports'),
+        '/tecnologia': (context) => ListNews(categoryTitle: 'technology'),
+        '/pesquisar': (context) => ListNews(categoryTitle: 'find'),
       },
       theme: ThemeData(
         appBarTheme: const AppBarTheme(

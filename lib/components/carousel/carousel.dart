@@ -3,19 +3,18 @@ import 'carousel_tile.dart';
 
 class Carousel extends StatefulWidget {
   List<dynamic>? noticias;
-  Carousel({Key? key, this.noticias }) : super(key: key );
+
+  Carousel({Key? key, this.noticias }) : super(key: key);
   
   @override
-  State<Carousel> createState() => _Carousel(noticias: noticias );
+  State<Carousel> createState() => _Carousel(noticias);
 }
 
 class _Carousel extends State<Carousel> {
   final _controller = PageController(initialPage: 0);
-  
+
   List<dynamic>? noticias;
-  _Carousel({ this.noticias }) {
-    print(noticias);
-  }
+  _Carousel(this.noticias);
 
   @override
   void dispose() {
@@ -33,10 +32,10 @@ class _Carousel extends State<Carousel> {
             itemCount: noticias?.length,
             itemBuilder: (_, index) {
               return CarouselTile(
-                categoryTitle: 'noticias?[index]?.title',
-                newsTitle: 'Título Notícia',
-                description: 'noticias?[index]?.description',
-                image: 'https://static01.nyt.com/images/2022/06/18/us/18virus-briefing-cdc-1/18virus-briefing-cdc-1-facebookJumbo.jpg',
+                categoryTitle: noticias?[index]?.title,
+                newsTitle: noticias?[index]?.title,
+                description: noticias?[index]?.description,
+                image: noticias?[index]?.image,
               );
             },
           ),

@@ -9,10 +9,10 @@ class MapperResponse {
     dynamic json = jsonDecode(response.body);
 
     return json["articles"].map( (item) => NewsParams( 
-      title: item["title"],
-      description: item["description"],
-      url: item["url"],
-      image: item["urlToImage"]
+      title: item["title"] != null ? item["title"] : 'Sem Titulo',
+      description: item["description"] != null ? item["description"] : 'Sem Descrição',
+      url: item["url"] != null ? item["url"] : '',
+      image: item["urlToImage"] != null ? item["urlToImage"] : 'https://www.cer-cavalos.com/images/not_found.png' 
     )).toList();
 
   }
