@@ -6,14 +6,15 @@ import 'package:timesnewsroman/service/category_service.dart';
 
 class CategoryNews extends StatelessWidget {
   String categoryTitle = '';
+  String country = '';
 
-  CategoryNews({Key? key, this.categoryTitle = ''}) : super(key: key);
+  CategoryNews({Key? key, this.categoryTitle = '', this.country = ''}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return ScaffoldTemplate(
       child: SingleChildScrollView(
         child: FutureBuilder(
-              future: CategoryService.init(categoryTitle),
+              future: CategoryService.init(categoryTitle, country),
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
                   List<dynamic> noticias = snapshot.data as List<dynamic>;
@@ -27,6 +28,7 @@ class CategoryNews extends StatelessWidget {
                           return NewsTile(
                             title: noticias[index].title,
                             image: noticias[index].image,
+                            url: noticias[index].url
                           );
                         },
                       ),

@@ -11,7 +11,7 @@ class HomeService {
     List<String> categorys = ["business", "entertainment", "general", "health", "science", "sports", "technology" ];
     for (var i = 0; i < categorys.length ; i++) {
       final element = categorys[i];
-      Response resp = await service.getTopHeadLines(category: element, pageSize: "1", country: "pt", apiKey: "dbbf3e42e5c046bcbc308abcc04caa3f");
+      Response resp = await service.getTopHeadLines(category: element, pageSize: "1", country: "pt");
       List<dynamic> data = MapperResponse.mapper(resp);
       novaLista.add( data[0] );
     }

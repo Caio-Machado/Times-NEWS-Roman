@@ -17,7 +17,7 @@ class _Home extends State<Home> {
   Widget build(BuildContext context) {
     return ScaffoldTemplate(
         child: FutureBuilder(
-            future: HomeService.initStatic(),
+            future: HomeService.init(),
             builder: (context, snapshot) {
               if (snapshot.hasData) {
                 List<dynamic> noticias = snapshot.data as List<dynamic>;
