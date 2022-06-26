@@ -1,8 +1,20 @@
 import 'package:flutter/material.dart';
 import 'carousel_tile.dart';
 
-class Carousel extends StatelessWidget {
+class Carousel extends StatefulWidget {
+  List<dynamic>? noticias;
+
+  Carousel({Key? key, this.noticias }) : super(key: key);
+  
+  @override
+  State<Carousel> createState() => _Carousel(noticias);
+}
+
+class _Carousel extends State<Carousel> {
   final _controller = PageController(initialPage: 0);
+
+  List<dynamic>? noticias;
+  _Carousel(this.noticias);
 
   @override
   void dispose() {
@@ -17,13 +29,13 @@ class Carousel extends StatelessWidget {
         Expanded(
           child: PageView.builder(
             controller: _controller,
-            itemCount: 7,
-            itemBuilder: (_, currentIndex) {
+            itemCount: noticias?.length,
+            itemBuilder: (_, index) {
               return CarouselTile(
-                categoryTitle: 'Título categoria',
-                newsTitle: 'Título Notícia',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                image: 'https://static.politico.com/15/49/549fc7b34126a8195fe9352a58f5/https-delivery.gettyimages.com/downloads/1237661675',
+                categoryTitle: noticias?[index]?.title,
+                newsTitle: noticias?[index]?.title,
+                description: noticias?[index]?.description,
+                image: noticias?[index]?.image,
               );
             },
           ),
