@@ -27,7 +27,8 @@ class Menu extends StatelessWidget {
             child: const Padding(
               padding: EdgeInsets.only(top: 10, bottom: 10),
               child: ListTile(
-                leading: Icon(Icons.home, size: 27, color: Colors.white),
+                leading:
+                    Icon(Icons.attach_money, size: 27, color: Colors.white),
                 title: Text(
                   'Negócios',
                   style: TextStyle(fontSize: 20, color: Colors.white),
@@ -40,7 +41,7 @@ class Menu extends StatelessWidget {
             child: const Padding(
               padding: EdgeInsets.only(top: 10, bottom: 10),
               child: ListTile(
-                leading: Icon(Icons.home, size: 27, color: Colors.white),
+                leading: Icon(Icons.tv, size: 27, color: Colors.white),
                 title: Text(
                   'Entreterimento',
                   style: TextStyle(fontSize: 20, color: Colors.white),
@@ -53,7 +54,7 @@ class Menu extends StatelessWidget {
             child: const Padding(
               padding: EdgeInsets.only(top: 10, bottom: 10),
               child: ListTile(
-                leading: Icon(Icons.home, size: 27, color: Colors.white),
+                leading: Icon(Icons.article, size: 27, color: Colors.white),
                 title: Text(
                   'Geral',
                   style: TextStyle(fontSize: 20, color: Colors.white),
@@ -66,7 +67,8 @@ class Menu extends StatelessWidget {
             child: const Padding(
               padding: EdgeInsets.only(top: 10, bottom: 10),
               child: ListTile(
-                leading: Icon(Icons.home, size: 27, color: Colors.white),
+                leading: Icon(Icons.health_and_safety,
+                    size: 27, color: Colors.white),
                 title: Text(
                   'Saúde',
                   style: TextStyle(fontSize: 20, color: Colors.white),
@@ -79,7 +81,7 @@ class Menu extends StatelessWidget {
             child: const Padding(
               padding: EdgeInsets.only(top: 10, bottom: 10),
               child: ListTile(
-                leading: Icon(Icons.home, size: 27, color: Colors.white),
+                leading: Icon(Icons.science, size: 27, color: Colors.white),
                 title: Text(
                   'Ciência',
                   style: TextStyle(fontSize: 20, color: Colors.white),
@@ -92,7 +94,8 @@ class Menu extends StatelessWidget {
             child: const Padding(
               padding: EdgeInsets.only(top: 10, bottom: 10),
               child: ListTile(
-                leading: Icon(Icons.home, size: 27, color: Colors.white),
+                leading:
+                    Icon(Icons.sports_soccer, size: 27, color: Colors.white),
                 title: Text(
                   'Esportes',
                   style: TextStyle(fontSize: 20, color: Colors.white),
@@ -105,7 +108,7 @@ class Menu extends StatelessWidget {
             child: const Padding(
               padding: EdgeInsets.only(top: 10, bottom: 10),
               child: ListTile(
-                leading: Icon(Icons.home, size: 27, color: Colors.white),
+                leading: Icon(Icons.computer, size: 27, color: Colors.white),
                 title: Text(
                   'Tecnologia',
                   style: TextStyle(fontSize: 20, color: Colors.white),
@@ -118,7 +121,7 @@ class Menu extends StatelessWidget {
             child: const Padding(
               padding: EdgeInsets.only(top: 10, bottom: 10),
               child: ListTile(
-                leading: Icon(Icons.home, size: 27, color: Colors.white),
+                leading: Icon(Icons.search, size: 27, color: Colors.white),
                 title: Text(
                   'Pesquisar',
                   style: TextStyle(fontSize: 20, color: Colors.white),
