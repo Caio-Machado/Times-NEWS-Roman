@@ -1,23 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:timesnewsroman/configs.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class NewsTile extends StatelessWidget {
   var title = '';
   var image = '';
-  var url   = '';
+  var url = '';
 
-  NewsTile({Key? key, this.title = '', this.image = '', this.url = '' } ) : super(key: key);
-  
-  void abrirUrl(host) async {
-    final Uri toLaunch = Uri.parse(host);
-    if (!await launchUrl(toLaunch)) throw 'Could not launch $host';
-  }
+  NewsTile({Key? key, this.title = '', this.image = '', this.url = ''})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => abrirUrl(url),
+      onTap: () => GeneralActions.abrirUrl(url),
       child: Container(
         margin: EdgeInsets.all(20),
         width: ResponsiveConfigs.adjustsWidth(
@@ -39,9 +34,9 @@ class NewsTile extends StatelessWidget {
         ),
         child: Column(
           children: [
-            Image.network(image, 
-            errorBuilder: (context, error, stackTrace) {
-              return Image.network('https://www.cer-cavalos.com/images/not_found.png');
+            Image.network(image, errorBuilder: (context, error, stackTrace) {
+              return Image.network(
+                  'https://www.cer-cavalos.com/images/not_found.png');
             }),
             Padding(
               padding: EdgeInsets.all(10),

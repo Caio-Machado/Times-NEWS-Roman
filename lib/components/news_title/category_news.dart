@@ -2,44 +2,29 @@ import 'package:flutter/material.dart';
 import 'package:timesnewsroman/components/news_title/news_title.dart';
 
 import 'package:timesnewsroman/components/template/generic_templates.dart';
+import 'package:timesnewsroman/pages/list_news.dart';
 import 'package:timesnewsroman/service/category_service.dart';
 
 class CategoryNews extends StatelessWidget {
-  String categoryTitle = '';
-  String country = '';
+  String type;
+  final filters;
 
-  CategoryNews({Key? key, this.categoryTitle = '', this.country = ''}) : super(key: key);
+  CategoryNews({Key? key, this.filters, this.type = ''}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return ScaffoldTemplate(
-      child: SingleChildScrollView(
-        child: FutureBuilder(
-              future: CategoryService.init(categoryTitle, country),
-              builder: (context, snapshot) {
-                if (snapshot.hasData) {
-                  List<dynamic> noticias = snapshot.data as List<dynamic>;
-                  return Column(
-                    children: [
-                      ListView.builder(
-                        physics: const NeverScrollableScrollPhysics(),
-                        shrinkWrap: true,
-                        itemCount: noticias.length,
-                        itemBuilder: (BuildContext context, int index) {
-                          return NewsTile(
-                            title: noticias[index].title,
-                            image: noticias[index].image,
-                            url: noticias[index].url
-                          );
-                        },
-                      ),
-                    ],
-                  );
-                } else {
-                  return const Center(
-                    child: CircularProgressIndicator(),
-                  );
-                }
-              }))
+    if (type == 'search') {
+      return ScaffoldTemplate(
+        child: ListNews(
+          news: CategoryService.initFiltro(filters?[0], filters?[1]),
+        ),
       );
+    } else {
+      return ScaffoldTemplate(
+        child: ListNews(
+          news: CategoryService.init(filters?[0], filters?[1]),
+        ),
+      );
+    }
   }
 }

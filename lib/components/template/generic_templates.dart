@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:timesnewsroman/components/template/menu.dart';
+import 'package:timesnewsroman/components/template/menus.dart';
 
 class ScaffoldTemplate extends StatelessWidget {
   Widget? child;
@@ -10,7 +10,7 @@ class ScaffoldTemplate extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarTemplate(),
-      endDrawer: Menu(),
+      endDrawer: SideDrawer(),
       body: child,
     );
   }
@@ -50,7 +50,9 @@ AppBar AppBarTemplate() {
   return AppBar(
     title: const Text(
       'Times NEWS Roman',
+      textAlign: TextAlign.right,
       style: TextStyle(fontFamily: 'brushtip', fontSize: 30),
     ),
+    centerTitle: true,
   );
 }

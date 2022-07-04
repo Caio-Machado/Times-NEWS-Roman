@@ -4,14 +4,24 @@ import 'carousel_tile.dart';
 class Carousel extends StatefulWidget {
   List<dynamic>? noticias;
 
-  Carousel({Key? key, this.noticias }) : super(key: key);
-  
+  Carousel({Key? key, this.noticias}) : super(key: key);
+
   @override
   State<Carousel> createState() => _Carousel(noticias);
 }
 
 class _Carousel extends State<Carousel> {
   final _controller = PageController(initialPage: 0);
+
+  final List<String> categorys = [
+    "Negócios",
+    "Entreterimento",
+    "Geral",
+    "Saúde",
+    "Ciência",
+    "Esportes",
+    "Tecnologia"
+  ];
 
   List<dynamic>? noticias;
   _Carousel(this.noticias);
@@ -32,10 +42,11 @@ class _Carousel extends State<Carousel> {
             itemCount: noticias?.length,
             itemBuilder: (_, index) {
               return CarouselTile(
-                categoryTitle: noticias?[index]?.title,
+                categoryTitle: categorys[index],
                 newsTitle: noticias?[index]?.title,
                 description: noticias?[index]?.description,
                 image: noticias?[index]?.image,
+                url: noticias?[index]?.url,
               );
             },
           ),
